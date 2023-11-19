@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int verificaSigno(int numero) {
+  if (numero > 0) {
+    return 1;
+  } else if (numero < 0) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+int main() {
+  int numero;
+
+  cout << "";
+  cin >> numero;
+
+  int sinal = verificaSigno(numero);
+
+  if (sinal == 1) {
+    cout << "número positivo" << endl;
+  } else if (sinal == -1) {
+    cout << "número negativo" << endl;
+  } else {
+    cout << "O número é zero" << endl;
+  }
+
+  return 0;
+}
