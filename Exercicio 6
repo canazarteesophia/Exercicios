@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int conversaoSegundos(int horas, int minutos, int segundos) {
+  int totalSegundos = segundos;
+  totalSegundos += minutos * 60;
+  totalSegundos += horas * 60 * 60;
+
+  return totalSegundos;
+}
+
+int main() {
+  int horas, minutos, segundos;
+
+  cout << "";
+  cin >> horas;
+
+  cout << "";
+  cin >> minutos;
+
+  cout << "";
+  cin >> segundos;
+
+  int totalSegundos = conversaoSegundos(horas, minutos, segundos);
+
+  cout << "conversão em segundos: " << totalSegundos << endl;
+
+  return 0;
+}
