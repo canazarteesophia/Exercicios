@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+bool quadradoPerfeito(int numero) {
+  for (int i = 1; i * i <= numero; i++) {
+    if (i * i == numero) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+int main() {
+  int numero;
+
+  cout << "";
+  cin >> numero;
+
+  bool quadrado = quadradoPerfeito(numero);
+
+  if (quadrado) {
+    cout << "O número é um quadrado perfeito" << endl;
+  } else {
+    cout << "O número não é um quadrado perfeito" << endl;
+  }
+
+  return 0;
+}
