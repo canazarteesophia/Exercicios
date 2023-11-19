@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int dobro(int numero) {
+  return numero * 2;
+}
+
+int main() {
+  int numero;
+
+  cout << "";
+  cin >> numero;
+
+  int dobroDoNumero = dobro(numero);
+
+  cout << "" << dobroDoNumero << endl;
+
+  return 0;
+}
