@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int maior(int numero1, int numero2) {
+  if (numero1 > numero2) {
+    return numero1;
+  } else {
+    return numero2;
+  }
+}
+
+int main() {
+  int numero1, numero2;
+
+  cout << "";
+  cin >> numero1;
+
+  cout << "";
+  cin >> numero2;
+
+  int maiorNumero = maior(numero1, numero2);
+
+  cout << "O maior número é: " << maiorNumero << endl;
+
+  return 0;
+}
